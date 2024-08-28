@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Cart</h1>
+        <div class="cart">
+            <ul id="cartItems"></ul>
+            <p>Total: Rs. <span id="totalAmount">0</span></p>
+        </div>
+        <a class="back-to-menu" href="menu.html">Back to Menu</a>
+    </div>
+
+    <script>
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+function removeFromCart(index) {
+    cart.splice(index, 1);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    displayCart(); // Recalculate total amount when cart is displayed
+}
+
+function displayCart() {
+    const cartItems = document.getElementById('cartItems');
+    const totalAmountElem = document.getElementById('totalAmount');
+
+    cartItems.innerHTML = '';
+    let totalAmount = 0; // Reset totalAmount to 0 before iterating
+
+    cart.forEach((cartItem, index) => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+            <img src="${cartItem.image}" alt="${cartItem.item}">
+            <span>${cartItem.item} - Rs.${cartItem.price}</span>
+            <button class="remove" onclick="removeFromCart(${index})">Remove</button>
+        `;
+        cartItems.appendChild(li);
+        totalAmount += cartItem.price;
+    });
+
+    totalAmountElem.textContent = totalAmount.toFixed(2);
+}
+
+// Ensure displayCart is called on window load correctly
+window.addEventListener('load', displayCart);
+
+    
+    </script>
+</body>
+</html>
+
