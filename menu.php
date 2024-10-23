@@ -71,7 +71,7 @@
             
         </section>
           </div>
-        <a class="view-cart" href="cart.html">View Cart</a>
+        <a class="view-cart" href="cart.php">View Cart</a>
     </div>
 
     </main>

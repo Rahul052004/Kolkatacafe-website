@@ -23,8 +23,8 @@
             </div>
         </form>
         <div class="options">
-            <a href="forgot.html">Forgot Password?</a>
-            <a href="signup.html">Sign Up</a>
+            <a href="forgot.php">Forgot Password?</a>
+            <a href="signup.php">Sign Up</a>
         </div>
     </div>
 </body>

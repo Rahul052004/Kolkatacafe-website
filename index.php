@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KolkataCafe.com</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="css/phone.css">
     <link href="https://fonts.googleapis.com/css2?family=Amita&family=Roboto:wght@100&family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -16,11 +17,11 @@
         <li class="item"><a href="#home">Home</a></li>
         <li class="item"><a href="#serve">Services</a></li>
         <li class="item"><a href="#client-section">Our Clients</a></li>
-        <li class="item"><a href="#contact">Contact Us</a></li>
-        <li class="item"><a href="login.html">Login</a></li>
-
-        
+        <li class="item"><a href="#contact">Contact Us</a></li>   
     </ul>
+
+    <button class="log" id="login" ><a href="login.php">Login</a></button>
+    <button class="cart" ><a href="cart.php"><img src="image/cart2.png" alt="Our Client"></a></button>
 
     </nav>
 

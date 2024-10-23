@@ -13,7 +13,7 @@
             <ul id="cartItems"></ul>
             <p>Total: Rs. <span id="totalAmount">0</span></p>
         </div>
-        <a class="back-to-menu" href="menu.html">Back to Menu</a>
+        <a class="back-to-menu" href="menu.php">Back to Menu</a>
     </div>
 
     <script>

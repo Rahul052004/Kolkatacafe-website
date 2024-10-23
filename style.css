@@ -40,7 +40,7 @@ html{
 #navbar ul {
     display: flex;
     font-family: 'Amita', cursive;
-    margin: auto 332px;
+    margin: auto 216px;
 }
 
 #navbar::before {
@@ -80,6 +80,40 @@ html{
 
     color: black;
     background-color: white;
+}
+
+.log{
+    width: 54px;
+    height: 31px;
+    font-size: 1.0rem;
+    margin-left: 174px;
+    margin-right: 36px;
+    text-align: center;
+    text-decoration: none;
+    padding: 4px 4px;
+    /* background-color: aliceblue; */
+    color: black;
+    border-radius: 10px;
+}
+ #log:hover{
+    width: 59px;
+    height: 36px;
+} 
+.cart
+{
+    height: 39px;
+    width: 38px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.cart:hover{
+    height: 42px;
+    width: 41px;
+}
+
+.cart img{
+    height: 25px;
+    width: 24px;
 }
 
 /* Home section */
